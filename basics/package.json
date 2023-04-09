@@ -2,8 +2,11 @@
   "name": "mongodb-learning",
   "version": "1.0.0",
   "description": "This repository is for mongodb learning",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+
+    "start": "tsc && node dist/app.js",
+    "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,12 +16,23 @@
   "keywords": [
     "mongodb",
     "shrading",
-    "csfle"
+    "csfle",
+    "typescript"
   ],
   "author": "pavan2108",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pavan-clone/mongodb-learning/issues"
   },
-  "homepage": "https://github.com/pavan-clone/mongodb-learning#readme"
+  "homepage": "https://github.com/pavan-clone/mongodb-learning#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
